@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<ui:composition template="WEB-INF/template/layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+	<ui:define name="titulo">Dashboard</ui:define>
+
+	<ui:define name="conteudo">
+	
+				<p:spacer height="20px" />
+				
+					<h3 style="margin-top: 0">Breve conhecimento</h3>
+					<p:accordionPanel>
+						<p:tab title="Perfil centralizador ...">
+							<h:panelGrid columns="2" cellpadding="10">
+								<p:graphicImage
+									name="imagens/center/tpcomportemental/cerebro_azul.png" />
+								<h:outputText
+									value="Esta liderança tem dificuldades em delegar tarefas.
+						Como lider se encarrega de realizar o trabalho, não passando a atividade para o profissional melhor 
+						preparado para a execução de tal esforço. Este perfil proporciona um profissional atolado em tarefas menos estratégicas,
+						uma vida sobrecarregada de trabalho, prejudicando sua vida familiar e social ...
+						E como melhorar a performance deste profissional que é muito bem preparado para o que foi contratado ?
+						Sim, temos um suporte para você e sua empresa, a ajuda de um coach e treinamentos sobre liderança e feedback de sua equipe e ou de seus líderes." />
+							</h:panelGrid>
+						</p:tab>
+						<p:tab title="Perfil Delargador ...">
+							<h:panelGrid columns="2" cellpadding="10">
+								<p:graphicImage
+									name="imagens/center/tpcomportemental/cerebro_engrenagem.png" />
+								<h:outputText
+									value="Este perfil define a atitude de um líder com dificuldades em 
+								transmitir poderes de maneira adequada, devido as pressões diárias, prazos apertados e qualidade nos entregáveis as pessoas
+								acabam entrando nesta armadilha de delargar as tarefas, esta é uma oportunidade e tendência nas organizações atualmente e não é a melhor forma de se
+								trabalhar com uma equipe ..." />
+							</h:panelGrid>
+						</p:tab>
+						<p:tab title="Perfil de quem delega adequadamente ...">
+							<h:panelGrid columns="2" cellpadding="10">
+								<p:graphicImage
+									name="imagens/center/tpcomportemental/cerebro_filetes.png" />
+								<h:outputText
+									value="Delegar tarefas é um perfil de um gestor inteligente e perspicaz. O mundo corporativo observa este perfil como
+						uma habilidade extraordinária dos profissionais de liderança. Aliás é importante saber distribuir as tarefas, saber como e para o colaborador capacitado para 
+						a respectiva tarefa, tudo para o suscesso da equipe e da corporação. Há uma confusão em entender que um lider deve saber tudo melhor que os demais 
+						membros do grupo e muitos são contratados a partir desta dominância. Um lider com perfil de delegar as tarefas, taz 
+						confiança para a equipe, responsabilidade, conhecimento e consequentemente sucesso para a empresa. " />
+							</h:panelGrid>
+						</p:tab>
+					</p:accordionPanel>
+				
+				
+	
+	</ui:define>
+
+</ui:composition>

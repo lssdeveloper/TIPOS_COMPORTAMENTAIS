@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Perfil de Liderança</title>
+	<style type="text/css">
+.ui-widget {
+	font-size: 120%;
+}
+</style>
+</h:head>
+
+<h:body>
+	<h:form id="pergunta4form">
+
+		<p class="ui-widget">Como você participa das atividades?</p>
+
+		<p:outputPanel id="customPanel" style="margin-bottom:10px">
+
+			<p:selectOneRadio id="opcao" value="#{dfRootBean.opcao}"
+				layout="custom">
+				<f:selectItem itemLabel="A" itemValue="A" />
+				<f:selectItem itemLabel="B" itemValue="B" />
+				<f:selectItem itemLabel="C" itemValue="C" />
+			</p:selectOneRadio>
+
+			<h:panelGrid columns="2" cellpadding="5">
+				<p:radioButton id="opt1" for="opcao" itemIndex="0" />
+				<h:outputLabel for="opt1" value="Acompanha sempre de perto e faz correções, críticas e elogios diários" />
+
+				<p:radioButton id="opt2" for="opcao" itemIndex="1" />
+				<h:outputLabel for="opt2" value="Geralmente se envolve novamente apenas no fim do processo" />
+
+				<p:radioButton id="opt3" for="opcao" itemIndex="2" />
+				<h:outputLabel for="opt3" value="Dialoga com a equipe e assume o papel de orientador" />
+
+			</h:panelGrid>
+		</p:outputPanel>
+
+		<p:commandButton id="pergunta4btn" value="Próxima pergunta >>"
+			icon="ui-icon-extlink" actionListener="#{dfRootBean.abrePergunta5}">
+			<p:ajax event="dialogReturn" listener="#{dfRootBean.aoRetornoDaPergunta5}" />  
+		</p:commandButton>
+	</h:form>
+</h:body>
+
+</html>
